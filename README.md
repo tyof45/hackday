@@ -27,10 +27,3 @@
 </p>
 
 
-## **Getting Started**
-
-Look under branches and find the appropriate month and year for the Hack Day you're participating in. Each branch has its own documentation for getting started. 
-
-If you have any questions, please ask on our [Slack](https://ie-sd.slack.com). We welcome everyone to our Slack, so don't be afraid to join! Have fun coding!
-
-**<a href="https://bit.ly/2C0umfQ">Join our Slack!</a>**

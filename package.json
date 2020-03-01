@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JordanMartinez/hackday/issues"
   },
-  "homepage": "https://github.com/JordanMartinez/hackday#readme"
+  "homepage": "https://github.com/JordanMartinez/hackday#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

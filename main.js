@@ -18,6 +18,20 @@ app.use(bodyParser.json());
 
 // Routes
 app.post('/', (req, res) => {
+  console.log("Request: \n" + req);
+  const fromUser = req.body.fromUser;
+  const toUser = req.body.toUser;
+  const amt = req.body.amt;
+  
+  if(req.body.type === "url_verification"){
+    const data = {
+      "challenge": req.body.challenge
+    }
+    request.post('https://slack.com/api/chat.postMessage', data, function (error, response, body) {
+      // Sends welcome message
+      res.json();
+    });
+  }
 
   const mkDataForm = (txt) => {
     return { form:
@@ -26,8 +40,8 @@ app.post('/', (req, res) => {
                     text: txt
                   }
            };
-  };
-  const data = mkDataForm("Hi! :wave: \n I'm your new bot.");
+  };  
+  const data = mkDataForm("Hi! from the Node server!");
   request.post('https://slack.com/api/chat.postMessage', data, function (error, response, body) {
     // Sends welcome message
     res.json();

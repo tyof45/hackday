@@ -12,6 +12,9 @@ app.listen(process.env.PORT || PORT, function() {
   console.log('Bot is listening on port ' + PORT);
 });
 
+// Add middlewares
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 app.get('/', function(req, res){
    res.send("Hello world!");
 });

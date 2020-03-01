@@ -29,7 +29,3 @@ app.post('/', (req, res) => {
     res.json();
   });
 });
-
-app.get('/', function(req, res){
-   res.send("Hello world!");
-});

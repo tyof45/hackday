@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.post('/', (req, res) => {
   var data = { form:
                 { token: process.env.SLACK_AUTH_TOKEN,
-                  channel: "#general",
+                  channel: "#teamblazor",
                   text: "Hi! :wave: \n I'm your new bot."
                 }
              };
